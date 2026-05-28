@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map Camera Japan – Buy Near Mint Cameras for Less via eBay</title>
+<meta name="description" content="Why savvy photographers buy from Map Camera Japan on eBay — near-mint, rigorously graded used cameras at honest prices, shipped worldwide from Tokyo.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #0C0E12;
+    --surface:  #13161C;
+    --surface2: #191D26;
+    --border:   #252A36;
+    --red:      #E8334A;
+    --red-dim:  #7A1A27;
+    --gold:     #D4A843;
+    --text:     #E8EAF0;
+    --muted:    #6E7585;
+    --label:    #9BA3B6;
+    --green:    #3DBA6F;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 72px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% -20%, rgba(232,51,74,0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-flag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--label);
+    margin-bottom: 24px;
+  }
+  .hero-flag span { font-size: 16px; }
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(48px, 8vw, 88px);
+    letter-spacing: 0.04em;
+    line-height: 1;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+  .hero h1 em { color: var(--red); font-style: normal; }
+  .hero-sub {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--label);
+    max-width: 580px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+  .hero-stats {
+    display: inline-flex;
+    gap: 32px;
+    padding: 16px 28px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: var(--red);
+    display: block;
+  }
+  .hero-stat-label {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* ── VALUE STRIP ── */
+  .value-strip {
+    background: var(--red);
+    padding: 14px 24px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .value-strip span::before {
+    content: '✓ ';
+    opacity: 0.75;
+  }
+
+  /* ── WHY BUY SECTION ── */
+  .why-section {
+    max-width: 1080px;
+    margin: 56px auto 0;
+    padding: 0 24px;
+  }
+  .why-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  .why-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 20px;
+  }
+  .why-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .why-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .why-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--label);
+    line-height: 1.65;
+  }
+
+  /* ── MAIN ── */
+  .main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+  }
+
+  /* ── CAMERA CARD ── */
+  .cam-list { display: flex; flex-direction: column; gap: 20px; }
+
+  .cam-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .cam-card:hover {
+    border-color: var(--red-dim);
+    transform: translateY(-3px);
+  }
+  .cam-card-image {
+    width: 280px;
+    min-width: 280px;
+    background: var(--surface2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .cam-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .condition-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(61,186,111,0.15);
+    color: var(--green);
+    border: 1px solid rgba(61,186,111,0.3);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 100px;
+    backdrop-filter: blur(4px);
+  }
+  .brand-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(12,14,18,0.85);
+    color: var(--red);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid var(--red-dim);
+    backdrop-filter: blur(4px);
+  }
+  .cam-card-body {
+    padding: 24px 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cam-category {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+  .cam-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.05em;
+    line-height: 1.15;
+    color: var(--text);
+  }
+  .cam-desc {
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--label);
+    line-height: 1.65;
+    flex: 1;
+  }
+  .cam-pros {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .cam-pros li {
+    font-size: 12.5px;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .cam-pros li::before { content: '✓'; font-weight: 700; font-size: 11px; }
+  .cam-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .cam-price-block { display: flex; flex-direction: column; gap: 2px; }
+  .cam-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+  }
+  .cam-price-note {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .cam-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--red);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.15s, transform 0.1s;
+    white-space: nowrap;
+  }
+  .cam-btn:hover { opacity: 0.85; transform: scale(1.03); }
+  .cam-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+  /* ── CTA BANNER ── */
+  .cta-banner {
+    margin-top: 48px;
+    background: var(--surface);
+    border: 1px solid var(--red-dim);
+    border-radius: 16px;
+    padding: 36px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .cta-text h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .cta-text p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--label);
+    max-width: 480px;
+    line-height: 1.6;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--red);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .cta-btn:hover { opacity: 0.85; }
+
+  /* ── ABOUT SECTION ── */
+  .about-section { margin-top: 64px; }
+  .about-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+  .about-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .store-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 28px 24px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .store-icon {
+    width: 64px; height: 64px;
+    border-radius: 12px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; flex-shrink: 0;
+  }
+  .store-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px; letter-spacing: 0.05em; color: var(--text);
+  }
+  .store-sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
+  .store-location {
+    margin-left: auto; text-align: right;
+    font-size: 11px; font-weight: 500; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .store-location strong {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px; letter-spacing: 0.05em; color: var(--label);
+  }
+  .store-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+  .store-stat {
+    padding: 20px 24px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .store-stat:last-child { border-right: none; }
+  .store-stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px; letter-spacing: 0.04em; color: var(--red); display: block;
+  }
+  .store-stat-label {
+    font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.1em; margin-top: 2px;
+  }
+  .store-ratings { padding: 24px 28px; border-bottom: 1px solid var(--border); }
+  .ratings-title {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 16px;
+  }
+  .rating-rows { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 32px; }
+  .rating-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .rating-name { font-size: 13px; color: var(--label); flex-shrink: 0; }
+  .rating-bar { flex: 1; height: 4px; background: var(--border); border-radius: 100px; overflow: hidden; }
+  .rating-bar-fill { height: 100%; width: 100%; background: var(--green); border-radius: 100px; }
+  .rating-score { font-size: 12px; font-weight: 600; color: var(--green); flex-shrink: 0; min-width: 28px; text-align: right; }
+  .quote-block {
+    margin: 0 28px 0;
+    padding: 16px 20px;
+    border-left: 3px solid var(--red);
+    background: var(--surface2);
+    border-radius: 0 10px 10px 0;
+    font-size: 13.5px; font-style: italic; color: var(--label); line-height: 1.65;
+  }
+  .quote-block cite {
+    display: block; margin-top: 8px; font-style: normal;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .store-body { padding: 24px 28px; }
+  .store-body p { font-size: 14px; color: var(--label); line-height: 1.75; margin-bottom: 14px; }
+  .store-body p:last-child { margin-bottom: 0; }
+  .store-body strong { color: var(--text); font-weight: 600; }
+  .disclaimer-pill {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 100px; padding: 6px 14px;
+    font-size: 12px; color: var(--muted); margin-top: 8px;
+  }
+  .disclaimer-pill::before { content: 'ℹ'; color: var(--red); font-size: 13px; }
+
+  /* ── DISCLOSURE ── */
+  .disclosure {
+    margin-top: 48px; padding: 20px 24px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; font-size: 12.5px; color: var(--muted); line-height: 1.7;
+  }
+  .disclosure strong { color: var(--label); }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    background: var(--surface); border-top: 1px solid var(--border);
+    text-align: center; padding: 28px 24px;
+    font-size: 12px; color: var(--muted);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 700px) {
+    .cam-card { flex-direction: column; }
+    .cam-card-image { width: 100%; min-width: unset; aspect-ratio: 4/3; }
+    .rating-rows { grid-template-columns: 1fr; }
+    .store-location { margin-left: 0; text-align: left; }
+    .cta-banner { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-flag"><span>🇯🇵</span> Shinjuku, Tokyo · Ships Worldwide via eBay</div>
+  <h1>Near Mint Cameras.<br><em>Honest Prices.</em></h1>
+  <p class="hero-sub">Map Camera is Japan's largest specialty camera store — and their eBay store lets you buy rigorously graded, near-mint used gear straight from Tokyo, without the plane ticket.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><span class="hero-stat-num">100%</span><span class="hero-stat-label">Positive Feedback</span></div>
+    <div class="hero-stat"><span class="hero-stat-num">127K+</span><span class="hero-stat-label">Items Sold</span></div>
+    <div class="hero-stat"><span class="hero-stat-num">32K</span><span class="hero-stat-label">eBay Followers</span></div>
+    <div class="hero-stat"><span class="hero-stat-num">3,760+</span><span class="hero-stat-label">Active Listings</span></div>
+  </div>
+</header>
+
+<!-- VALUE STRIP -->
+<div class="value-strip">
+  <span>Rigorously Graded Condition</span>
+  <span>Ships Directly from Tokyo</span>
+  <span>Perfect 5.0 Seller Ratings</span>
+  <span>Massive Inventory Across All Brands</span>
+</div>
+
+<!-- WHY BUY SECTION -->
+<section class="why-section">
+  <h2 class="why-heading">Why Buy Refurbished from Map Camera?</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="why-icon">🔍</span>
+      <div class="why-title">Japanese Grading Standards</div>
+      <p class="why-desc">In Japan, "Near Mint" genuinely means near mint. Map Camera's grading is meticulous — each item is inspected and described with precise, honest condition notes you can trust.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">💴</span>
+      <div class="why-title">Save vs. Buying New</div>
+      <p class="why-desc">Get the same sensor, same image quality, and the same results as a brand-new camera — often for 30–50% less. The only difference is a little cosmetic wear you'll never notice in photos.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">📦</span>
+      <div class="why-title">Ships Worldwide</div>
+      <p class="why-desc">No need to book a flight to Shinjuku. Map Camera ships internationally via eBay, backed by eBay's buyer protection and a seller with a spotless 100% feedback record.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">🎯</span>
+      <div class="why-title">Rare Gear, Easily Found</div>
+      <p class="why-desc">From Leica rangefinders to vintage Zeiss glass, Map Camera stocks gear that's hard to find anywhere else. Over 3,760 active listings across every major brand.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">⭐</span>
+      <div class="why-title">Perfect Seller Ratings</div>
+      <p class="why-desc">Across 127,000+ sales, Map Camera holds a perfect 5.0 in description accuracy, shipping speed, cost, and communication. That track record doesn't lie.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">♻️</span>
+      <div class="why-title">Smarter Than Buying New</div>
+      <p class="why-desc">Camera bodies depreciate fast. A refurbished body from a trusted source lets you put more budget toward glass — which is where image quality actually lives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CAMERAS -->
+<main class="main">
+  <div class="section-header">
+    <h2 class="section-title">Currently Available from the Store</h2>
+  </div>
+
+  <div class="cam-list">
+
+    <!-- 1. Olympus OM-D E-M10 Mark IV -->
+    <div class="cam-card">
+      <div class="cam-card-image">
+        <img src="https://raw.githubusercontent.com/foodmaxxing/map-camera-japan/main/image1.jpg" alt="Olympus OM-D E-M10 Mark IV" loading="lazy">
+        <span class="brand-badge">Olympus</span>
+        <span class="condition-badge">Near Mint</span>
+      </div>
+      <div class="cam-card-body">
+        <span class="cam-category">Mirrorless · Micro Four Thirds</span>
+        <h3 class="cam-title">Olympus OM-D E-M10 Mark IV Black</h3>
+        <p class="cam-desc">One of the most beginner-friendly mirrorless cameras ever made — and one of the best arguments for buying refurbished. The E-M10 IV packs Olympus's legendary 5-axis in-body image stabilization into a compact, stylish body. A Near Mint copy from Map Camera means you get all the performance of a new unit at a fraction of the cost.</p>
+        <ul class="cam-pros">
+          <li>5-axis IBIS — sharp shots even handheld in low light</li>
+          <li>Selfie-ready flip-down touchscreen</li>
+          <li>Compact, lightweight, and travel-friendly</li>
+          <li>Near Mint condition — inspected and graded in Tokyo</li>
+        </ul>
+        <div class="cam-footer">
+          <div class="cam-price-block">
+            <span class="cam-price">$502.00</span>
+            <span class="cam-price-note">Refurbished · Near Mint</span>
+          </div>
+          <a class="cam-btn" href="https://ebay.us/lzfeZy" target="_blank" rel="noopener">
+            View on eBay
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Nikon Zfc -->
+    <div class="cam-card">
+      <div class="cam-card-image">
+        <img src="https://raw.githubusercontent.com/foodmaxxing/map-camera-japan/main/image2.jpg" alt="Nikon Z fc Black" loading="lazy">
+        <span class="brand-badge">Nikon</span>
+        <span class="condition-badge">Near Mint</span>
+      </div>
+      <div class="cam-card-body">
+        <span class="cam-category">Mirrorless · APS-C</span>
+        <h3 class="cam-title">Nikon Z fc Black 20.9MP</h3>
+        <p class="cam-desc">The Zfc is arguably the most beautiful mirrorless camera on the market — retro dials, a premium all-metal build, and Nikon's modern Z-mount autofocus engine under the hood. Buying a Near Mint copy from Map Camera means you get that iconic look and feel without paying the full retail premium.</p>
+        <ul class="cam-pros">
+          <li>20.9MP APS-C sensor with fast hybrid AF</li>
+          <li>Classic retro design with physical exposure dials</li>
+          <li>Vari-angle touchscreen for creative shooting angles</li>
+          <li>Near Mint body — looks and performs like new</li>
+        </ul>
+        <div class="cam-footer">
+          <div class="cam-price-block">
+            <span class="cam-price">$601.35</span>
+            <span class="cam-price-note">Refurbished · Near Mint</span>
+          </div>
+          <a class="cam-btn" href="https://ebay.us/RoK0qu" target="_blank" rel="noopener">
+            View on eBay
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Fujifilm X-T30 III -->
+    <div class="cam-card">
+      <div class="cam-card-image">
+        <img src="https://raw.githubusercontent.com/foodmaxxing/map-camera-japan/main/image3.jpg" alt="Fujifilm X-T30 III Charcoal Silver" loading="lazy">
+        <span class="brand-badge">Fujifilm</span>
+        <span class="condition-badge">Near Mint</span>
+      </div>
+      <div class="cam-card-body">
+        <span class="cam-category">Mirrorless · APS-C</span>
+        <h3 class="cam-title">Fujifilm X-T30 III Charcoal Silver</h3>
+        <p class="cam-desc">Fujifilm's film simulation modes are legendary — and the X-T30 III is the most accessible way to get them. Charcoal Silver is the kind of camera that draws compliments before you even raise it to your eye. A Near Mint copy from Map Camera means stunning color science, straight out of camera, for significantly less than new.</p>
+        <ul class="cam-pros">
+          <li>Fujifilm film simulations — beautiful color SOOC</li>
+          <li>40MP sensor with X-Processor 5 engine</li>
+          <li>Charcoal Silver colorway — a head-turner</li>
+          <li>Near Mint from Japan's most trusted used camera store</li>
+        </ul>
+        <div class="cam-footer">
+          <div class="cam-price-block">
+            <span class="cam-price">$877.80</span>
+            <span class="cam-price-note">Refurbished · Near Mint</span>
+          </div>
+          <a class="cam-btn" href="https://ebay.us/rpcQqw" target="_blank" rel="noopener">
+            View on eBay
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div class="cta-text">
+      <h3>See the Full Inventory</h3>
+      <p>These are just three picks from over 3,760 active listings. Map Camera carries Leica, Sony, Canon, Nikon, Fujifilm, Hasselblad, Carl Zeiss, and more — all graded, all shipped from Tokyo.</p>
+    </div>
+    <a class="cta-btn" href="https://www.ebay.com/str/mapcamera?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339148928&customid=&toolid=10001&mkevt=1" target="_blank" rel="noopener">
+      Browse Map Camera on eBay
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <h2 class="about-heading">About Map Camera</h2>
+    <div class="about-card">
+
+      <div class="store-header">
+        <div class="store-icon">🗾</div>
+        <div>
+          <div class="store-name">Map Camera</div>
+          <div class="store-sub">Japan's largest specialty camera store — Shinjuku, Tokyo</div>
+        </div>
+        <div class="store-location">
+          <strong>📍 Nishishinjuku</strong>
+          Tokyo, Japan
+        </div>
+      </div>
+
+      <div class="store-stats">
+        <div class="store-stat"><span class="store-stat-num">100%</span><span class="store-stat-label">Positive Feedback</span></div>
+        <div class="store-stat"><span class="store-stat-num">127K+</span><span class="store-stat-label">Items Sold</span></div>
+        <div class="store-stat"><span class="store-stat-num">32K</span><span class="store-stat-label">eBay Followers</span></div>
+        <div class="store-stat"><span class="store-stat-num">3,760+</span><span class="store-stat-label">Active Listings</span></div>
+      </div>
+
+      <div class="store-ratings">
+        <p class="ratings-title">eBay Detailed Seller Ratings</p>
+        <div class="rating-rows">
+          <div class="rating-row"><span class="rating-name">Accurate description</span><div class="rating-bar"><div class="rating-bar-fill"></div></div><span class="rating-score">5.0</span></div>
+          <div class="rating-row"><span class="rating-name">Reasonable shipping cost</span><div class="rating-bar"><div class="rating-bar-fill"></div></div><span class="rating-score">5.0</span></div>
+          <div class="rating-row"><span class="rating-name">Shipping speed</span><div class="rating-bar"><div class="rating-bar-fill"></div></div><span class="rating-score">5.0</span></div>
+          <div class="rating-row"><span class="rating-name">Communication</span><div class="rating-bar"><div class="rating-bar-fill"></div></div><span class="rating-score">5.0</span></div>
+        </div>
+      </div>
+
+      <blockquote class="quote-block">
+        "Very nice store with friendly staff. Prices are better than what you'll find at Bic or Yodobashi for new gear. They also have a solid selection of slightly used gear."
+        <cite>— Verified customer review</cite>
+      </blockquote>
+
+      <div class="store-body">
+        <p>
+          Map Camera has been the go-to destination for photographers in Tokyo for decades. Their flagship store in Nishishinjuku spans multiple floors — each dedicated to a different brand — and is considered by many in the photography community to be <strong>Japan's finest camera retail destination</strong>. Locals, tourists, and working professionals all shop there.
+        </p>
+        <p>
+          Their eBay store brings that same expertise to buyers worldwide. What sets Map Camera apart from other used gear sellers is the <strong>precision of their Japanese grading system</strong>. When a listing says "Near Mint," it means the camera has been physically inspected, cleaned, and confirmed to be in near-flawless condition. There are no vague condition descriptions here.
+        </p>
+        <p>
+          With <strong>127,000+ items sold</strong>, a <strong>perfect 100% positive feedback rating</strong>, and 5.0 across every detailed seller metric, Map Camera has built one of the most trusted reputations of any camera reseller operating on eBay globally. If you've been on the fence about buying refurbished, this is the seller that changes your mind.
+        </p>
+        <span class="disclaimer-pill">Map Camera is not affiliated with, responsible for, or aware of this article.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="disclosure">
+    <strong>Affiliate Disclosure:</strong> This article contains affiliate links. If you purchase through them, a small commission may be earned at no additional cost to you. This content is for informational purposes only — always review individual eBay listings carefully, as condition and availability may vary.
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  © 2026 Map Camera Guide &nbsp;·&nbsp; Independent editorial — not affiliated with Map Camera.
+</footer>
+
+</body>
+</html>
